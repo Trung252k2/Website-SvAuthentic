@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thiết kế UI Website - SvAuthentic</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="top">
+        <h1>📋 SvAuthentic — Thiết kế Dự án</h1>
+        <p class="subtitle">Thiết kế giao diện & build website — trình bày tiến độ, kế hoạch và thanh toán</p>
+      </header>
+
+      <!-- Thông tin dự án -->
+      <section class="card">
+        <div class="card-head">
+          <h2>ℹ️ Thông tin dự án</h2>
+          <button class="toggle-collapse" data-target="#info">▼</button>
+        </div>
+        <div id="info" class="card-body">
+          <ul class="info-list">
+            <li><strong>👥 Khách hàng:</strong> Anh Đoàn</li>
+            <li><strong>📂 Lĩnh vực:</strong> Bán hàng, thương mại</li>
+            <li><strong>⭐ USP:</strong> Công nghệ tìm kiếm gợi ý, nhắn tin tự động & AI</li>
+            <li><strong>🖥 Hạng mục:</strong> Thiết kế giao diện & build website</li>
+            <li><strong>📅 Thời gian dự án:</strong> 15/09/2025 – 30/12/2025</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Quy trình dự án -->
+      <section class="card">
+        <div class="card-head">
+          <h2>⚙️ Quy trình dự án</h2>
+        </div>
+
+        <div class="accordion" id="workflow">
+          <!-- Giai đoạn 1 -->
+          <article class="accordion-item active">
+            <button class="accordion-header">Giai đoạn 1: Project Brief <span class="chev">▸</span></button>
+            <div class="accordion-body">
+              <ul>
+                <li><strong>Requirements:</strong> Trao đổi và tổng hợp thông tin chi tiết từ khách hàng.</li>
+                <li><strong>Progress check:</strong> Đưa ra dự kiến thời gian hoàn thành và số lượng thành phẩm.</li>
+                <li><strong>Packages design:</strong> Tư vấn và báo giá gói thiết kế phù hợp.</li>
+              </ul>
+              <div class="note">⚠️ <strong>Lưu ý:</strong> Thanh toán đợt 1: <b>30%</b> sau khi ký hợp đồng</div>
+            </div>
+          </article>
+
+          <!-- Giai đoạn 2 -->
+          <article class="accordion-item">
+            <button class="accordion-header">Giai đoạn 2: Cấu trúc Website <span class="chev">▸</span></button>
+            <div class="accordion-body">
+              <ul>
+                <li><strong>UX Website:</strong> sitemap, user flow, wireframes.</li>
+                <li><strong>Moodboard:</strong> style design, color palette, typography, iconography.</li>
+              </ul>
+              <div class="note">⚠️ Khách hàng chuẩn bị logo & brand guideline (AI/EPS/SVG nếu có)</div>
+            </div>
+          </article>
+
+          <!-- Giai đoạn 3 -->
+          <article class="accordion-item">
+            <button class="accordion-header">Giai đoạn 3: Thiết kế Website (Round 1–2) <span class="chev">▸</span></button>
+            <div class="accordion-body">
+              <ul>
+                <li><strong>Homepage:</strong> thiết kế 3 option layout trang chính.</li>
+                <li><strong>Layout pages:</strong> thiết kế layout cho các trang con.</li>
+                <li><strong>Revisions:</strong> feedback round 1 & 2.</li>
+              </ul>
+              <div class="note">⚠️ Thanh toán đợt 2: <b>20%</b> sau feedback round 1</div>
+            </div>
+          </article>
+
+          <!-- Giai đoạn 4 -->
+          <article class="accordion-item">
+            <button class="accordion-header">Giai đoạn 4: Phát triển Website (Round 3–4) <span class="chev">▸</span></button>
+            <div class="accordion-body">
+              <ul>
+                <li><strong>Design pages:</strong> Thiết kế các trang con theo style homepage.</li>
+                <li><strong>Revisions:</strong> feedback round 3–4.</li>
+              </ul>
+              <div class="note">⚠️ Thanh toán đợt 3: <b>20%</b> — đợt 4: <b>30%</b></div>
+            </div>
+          </article>
+
+          <!-- Giai đoạn 5 -->
+          <article class="accordion-item">
+            <button class="accordion-header">Giai đoạn 5: Bàn giao dự án <span class="chev">▸</span></button>
+            <div class="accordion-body">
+              <ul>
+                <li><strong>Packing files:</strong> Sắp xếp và đóng gói toàn bộ thiết kế.</li>
+                <li><strong>Delivery:</strong> Bàn giao và nghiệm thu file Figma & resource.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    <!-- Timeline -->
+<section class="card">
+  <div class="card-head">
+    <h2>📅 Tiến độ (Timeline)</h2>
+    <div class="progress-legend">
+      <span class="legend completed">Hoàn thành</span>
+      <span class="legend inprogress">Đang thực hiện</span>
+      <span class="legend pending">Chưa bắt đầu</span>
+    </div>
+  </div>
+
+  <div class="card-body">
+    <div id="progressBar" class="progress"></div>
+    <div class="timeline-table-wrap">
+      <table id="timelineTable" class="timeline-table">
+        <thead>
+          <tr>
+            <th>Công việc</th>
+            <th>Giai đoạn</th>
+            <th>Thời gian</th>
+            <th>Trạng thái</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Trao đổi và thu thập thông tin</td>
+            <td>Giai đoạn 1</td>
+            <td>07/08/2023</td>
+            <td class="legend inprogress">Đang thực hiện</td>
+          </tr>
+          <tr>
+            <td>Dự kiến chi phí và thời gian</td>
+            <td>Giai đoạn 1</td>
+            <td>09/08/2023</td>
+            <td class="legend inprogress">Đang thực hiện</td>
+          </tr>
+          <tr>
+            <td>Khách cung cấp tài nguyên thiết kế</td>
+            <td>Giai đoạn 2</td>
+            <td>17/08/2023</td>
+            <td class="legend inprogress">Đang thực hiện</td>
+          </tr>
+          <tr>
+            <td>Duyệt ý tưởng và định hướng thiết kế</td>
+            <td>Giai đoạn 2</td>
+            <td>21/08/2023</td>
+            <td class="legend inprogress">Đang thực hiện</td>
+          </tr>
+          <tr>
+            <td>Feedback & duyệt round 1</td>
+            <td>Giai đoạn 3</td>
+            <td>30/08/2023</td>
+            <td class="legend pending">Chưa bắt đầu</td>
+          </tr>
+          <tr>
+            <td>Thanh toán chi phí đợt 2</td>
+            <td>Giai đoạn 3</td>
+            <td>04/09/2023</td>
+            <td class="legend pending">Chưa bắt đầu</td>
+          </tr>
+          <tr>
+            <td>Feedback round 3</td>
+            <td>Giai đoạn 4</td>
+            <td>21/09/2023</td>
+            <td class="legend pending">Chưa bắt đầu</td>
+          </tr>
+          <tr>
+            <td>Thanh toán chi phí đợt 3</td>
+            <td>Giai đoạn 4</td>
+            <td>25/09/2023</td>
+            <td class="legend pending">Chưa bắt đầu</td>
+          </tr>
+          <tr>
+            <td>Điều chỉnh toàn bộ trạng thái thiết kế</td>
+            <td>Giai đoạn 5</td>
+            <td>13/10/2023</td>
+            <td class="legend pending">Chưa bắt đầu</td>
+          </tr>
+          <tr>
+            <td>Bàn giao và nghiệm thu file thiết kế</td>
+            <td>Giai đoạn 5</td>
+            <td>30/10/2023</td>
+            <td class="legend pending">Chưa bắt đầu</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Gói dịch vụ -->
+<section class="card small-cards">
+  <div class="card-head">
+    <h2>🧾 Chi tiết gói dịch vụ</h2>
+  </div>
+  <div class="card-body grid">
+    
+    <!-- Basic -->
+    <div class="package">
+      <h3>Basic – Khởi động thương hiệu</h3>
+      <ul>
+        <li>Landing page giới thiệu</li>
+        <li>1 trang danh mục sản phẩm nổi bật</li>
+        <li>Giới thiệu thương hiệu & USP</li>
+        <li>Form liên hệ / Zalo OA</li>
+        <li>SEO on-page cơ bản</li>
+        <li>Bảo mật SSL</li>
+      </ul>
+    </div>
+
+    <!-- Standard -->
+    <div class="package">
+      <h3>Standard – Bán hàng hiệu quả</h3>
+      <ul>
+        <li>Tất cả tính năng Basic</li>
+        <li>Trang chủ hiện đại (Banner, sản phẩm nổi bật)</li>
+        <li>4–5 trang: Danh mục, Chi tiết sản phẩm, Blog, Giới thiệu</li>
+        <li>Tích hợp WooCommerce (giỏ hàng, thanh toán COD/Banking)</li>
+        <li>Email thông báo đơn hàng</li>
+        <li>Quản lý đơn hàng & tồn kho thủ công</li>
+        <li>Tích hợp Google Analytics & Meta Pixel</li>
+      </ul>
+    </div>
+
+    <!-- Premium -->
+    <div class="package">
+      <h3>Premium – Nền tảng chuyên nghiệp</h3>
+      <ul>
+        <li>Tất cả tính năng Standard</li>
+        <li>Check giày real (upload ảnh)</li>
+        <li>Chatbot tư vấn chọn giày</li>
+        <li>Đo size chân online (upload ảnh bàn chân)</li>
+        <li>So sánh 2–3 sản phẩm</li>
+        <li>Gợi ý sản phẩm thông minh</li>
+        <li>Trang VIP: ưu đãi, quà tặng định kỳ</li>
+        <li>Feedback khách hàng (ảnh, video unbox, review)</li>
+        <li>Popup thu thập email/SĐT để remarketing</li>
+        <li>Email/SMS chăm sóc sau mua</li>
+        <li>Dashboard quản trị doanh số & sản phẩm bán chạy</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+      <!-- WordPress Pros & Cons -->
+      <section class="card">
+        <div class="card-head">
+          <h2>🟢 Điểm mạnh & ⚠️ Hạn chế khi dùng WordPress</h2>
+        </div>
+        <div class="card-body">
+          <h3>✅ Điểm mạnh</h3>
+          <ul>
+            <li><strong>Nhanh ra mắt:</strong> Có thể dựng site bán hàng (WooCommerce) nhanh nhờ theme & plugin sẵn có.</li>
+            <li><strong>Chi phí thấp:</strong> Không cần nhiều custom code, tận dụng hệ sinh thái plugin.</li>
+            <li><strong>Plugin phong phú:</strong> WooCommerce hỗ trợ giỏ hàng, COD, Banking QR, email xác nhận. Có plugin loyalty, popup, SEO (RankMath/Yoast), Zalo OA, GA4, Meta Pixel.</li>
+            <li><strong>Dễ quản trị:</strong> Chủ shop tự thêm/sửa sản phẩm, blog, banner. Dashboard có sẵn cho đơn hàng, tồn kho, báo cáo.</li>
+            <li><strong>Tối ưu SEO & Marketing:</strong> WordPress mạnh về SEO content/blog, dễ tích hợp landing page & campaign remarketing.</li>
+          </ul>
+
+          <h3>⚠️ Hạn chế & Thách thức</h3>
+          <ul>
+            <li><strong>Tính năng đặc biệt (USP):</strong> Check giày real bằng ảnh, đo size chân online, so sánh sản phẩm, chatbot tư vấn → cần code custom hoặc API AI.</li>
+            <li><strong>Hiệu năng & mở rộng:</strong> Traffic cao + nhiều media → site dễ chậm. Quản lý kho lớn + filter nâng cao nặng → cần caching & hosting mạnh.</li>
+            <li><strong>Quản trị kho:</strong> WooCommerce quản lý tồn kho tốt, nhưng kho “ảo không giới hạn” cần chỉnh plugin.</li>
+            <li><strong>Bảo mật:</strong> WordPress phổ biến nên dễ bị tấn công nếu không update plugin/theme hoặc dùng plugin lậu.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Thanh toán -->
+      <section class="card">
+        <div class="card-head">
+          <h2>💰 Quy trình thanh toán</h2>
+        </div>
+        <div class="card-body">
+          <ul class="info-list">
+            <li>30% khi ký hợp đồng</li>
+            <li>40% khi hoàn thành UI chính</li>
+            <li>30% khi bàn giao</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <small>Made with ♥ — SvAuthentic</small>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
